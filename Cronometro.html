@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro y Cuenta Regresiva</title>
+    <link rel="stylesheet" href="cronometro.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cronómetro</h1>
+        <div id="cronometro">00:00:00</div>
+        <button id="start">Iniciar</button>
+        <button id="stop">Detener</button>
+        <button id="reset">Reiniciar</button>
+
+        <h1>Cuenta Regresiva</h1>
+        <form id="cuentaRegresivaForm">
+            <label for="fechaFinal">Selecciona una fecha y hora:</label>
+            <input type="datetime-local" id="fechaFinal" required>
+            <button type="submit">Iniciar Cuenta Regresiva</button>
+        </form>
+        <div id="cuentaRegresiva">00:00:00</div>
+    </div>
+
+    <script src="cronometro.js"></script>
+</body>
+</html>
